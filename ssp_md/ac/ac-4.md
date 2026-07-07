@@ -24,9 +24,9 @@ x-trestle-set-params:
   #
   ac-04_odp:
     alt-identifier: ac-4_prm_1
-    profile-values:
-      - <REPLACE_ME>
-    profile-param-value-origin: <REPLACE_ME>
+    ssp-values:
+    - AWS security groups permitting web servers to reach core application services (database access denied), core application services to reach the database, and only the four approved external egress flows (IdP, state reporting, food services, transportation); all other egress denied
+    profile-param-value-origin: AC-4 implementation statement
 x-trestle-global:
   profile:
     title: IPS-SRS-001 Tailored Moderate Baseline (AC, AU, IR, CP)
@@ -60,8 +60,8 @@ ______________________________________________________________________
 
 ### This System
 
-<!-- Add implementation prose for the main This System component for control: ac-4 -->
+Internal flow of information is enforced at the system boundaries. Web servers communicate with core application services, with database access denied. Core application services may communicate with the database. Enforcement is carried out by AWS security groups.
 
-#### Implementation Status: planned
+There are four approved authorizations for the flow of information outside the system. IdP services are a common control that the IPS IT department manages for the system. Other external flows are the state department reporting, food services, and transportation services with defined endpoints. All other data egress is denied.
 
-______________________________________________________________________
+#### Implementation Status: implemented
