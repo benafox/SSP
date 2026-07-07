@@ -42,8 +42,6 @@ ______________________________________________________________________
 
 ### This System
 
-<!-- Add implementation prose for the main This System component for control: ac-3 -->
+Access control policy is enforced through the application's role-based access control component. This examines record level restrictions for teacher, parent, and school administrator accounts based on the student associations. An account with no associated students sees no records. System administrator access is gated through the infrastructure's AWS IAM component. The source of approved role-to-privilege relationships originate from the System Description and FIPS 199 Categorization document under Users and Roles.
 
-#### Implementation Status: planned
-
-______________________________________________________________________
+#### Implementation Status: implemented
