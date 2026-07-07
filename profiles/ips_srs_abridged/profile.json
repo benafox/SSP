@@ -1,0 +1,80 @@
+{
+  "profile": {
+    "uuid": "633f8b5a-2f33-4185-b451-e0bdcb0a1f44",
+    "metadata": {
+      "title": "IPS-SRS-001 Tailored Moderate Baseline (AC, AU, IR, CP)",
+      "last-modified": "2026-07-05T23:08:48.271323+00:00",
+      "version": "0.1",
+      "oscal-version": "1.2.2"
+    },
+    "imports": [
+      {
+        "href": "trestle://profiles/nist_rev5_moderate/profile.json",
+        "include-controls": [
+          {
+            "with-ids": [
+              "ac-1",
+              "ac-2",
+              "ac-2.1",
+              "ac-2.2",
+              "ac-2.3",
+              "ac-2.4",
+              "ac-2.5",
+              "ac-2.13",
+              "ac-3",
+              "ac-4",
+              "ac-5",
+              "ac-6",
+              "ac-6.1",
+              "ac-6.2",
+              "ac-6.5",
+              "ac-6.7",
+              "ac-6.9",
+              "ac-6.10",
+              "ac-7",
+              "ac-8",
+              "ac-11",
+              "ac-11.1",
+              "ac-12",
+              "ac-14",
+              "ac-17",
+              "ac-17.1",
+              "ac-17.2",
+              "ac-17.3",
+              "ac-17.4",
+              "ac-18",
+              "ac-18.1",
+              "ac-18.3",
+              "ac-19",
+              "ac-19.5",
+              "ac-20",
+              "ac-20.1",
+              "ac-20.2",
+              "ac-21",
+              "ac-22",
+              "au-1",
+              "au-2",
+              "au-3",
+              "au-3.1",
+              "au-4",
+              "au-5",
+              "au-6",
+              "au-6.1",
+              "au-6.3",
+              "au-7",
+              "au-7.1",
+              "au-8",
+              "au-9",
+              "au-9.4",
+              "au-11",
+              "au-12"
+            ]
+          }
+        ]
+      }
+    ],
+    "merge": {
+      "as-is": true
+    }
+  }
+}
