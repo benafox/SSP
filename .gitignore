@@ -1,0 +1,12 @@
+# Python
+.venv/
+__pycache__/
+*.pyc
+
+# Trestle / OS noise
+.trestle/cache/
+.DS_Store
+
+# Editor
+.vscode/
+.idea/dist/
