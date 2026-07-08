@@ -24,14 +24,14 @@ x-trestle-set-params:
   #
   ac-08_odp.01:
     alt-identifier: ac-8_prm_1
-    profile-values:
-      - <REPLACE_ME>
-    profile-param-value-origin: <REPLACE_ME>
+    profile-param-value-origin: AC-8 implementation statement
+    ssp-values:
+    - the IPS system use notification stating terms of use, privacy policy, system ownership, monitoring policy, prohibition of unauthorized use, and the use-as-consent model
   ac-08_odp.02:
     alt-identifier: ac-8_prm_2
-    profile-values:
-      - <REPLACE_ME>
-    profile-param-value-origin: <REPLACE_ME>
+    profile-param-value-origin: AC-8 implementation statement
+    ssp-values:
+    - not applicable - the system has no publicly accessible content (see AC-22)
 x-trestle-global:
   profile:
     title: IPS-SRS-001 Tailored Moderate Baseline (AC, AU, IR, CP)
@@ -89,8 +89,6 @@ ______________________________________________________________________
 
 ### This System
 
-<!-- Add implementation prose for the main This System component for control: ac-8 -->
+Before a user accesses the application, there is a popup message displaying a system use message, on the app login screen. This message blocks further system use until a user acknowledges via click. The message displays the terms of use, privacy policy, ownership of the system, system monitoring policy, prohibition of unauthorized use, and use-as-consent model.
 
-#### Implementation Status: planned
-
-______________________________________________________________________
+#### Implementation Status: implemented
