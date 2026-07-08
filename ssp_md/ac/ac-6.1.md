@@ -24,32 +24,31 @@ x-trestle-set-params:
   #
   ac-6.1_prm_2:
     aggregates:
-      - ac-06.01_odp.02
-      - ac-06.01_odp.03
-      - ac-06.01_odp.04
-    profile-param-value-origin: <REPLACE_ME>
+    - ac-06.01_odp.02
+    - ac-06.01_odp.03
+    - ac-06.01_odp.04
   ac-06.01_odp.01:
     alt-identifier: ac-6.1_prm_1
-    profile-values:
-      - <REPLACE_ME>
-    profile-param-value-origin: <REPLACE_ME>
+    ssp-values:
+    - the ISSO and system administrators
+    profile-param-value-origin: AC-6(1) implementation statement
   ac-06.01_odp.02:
-    profile-values:
-      - <REPLACE_ME>
-    profile-param-value-origin: <REPLACE_ME>
+    ssp-values:
+    - patch deployment, firewall rule changes, security group rule changes, security service configuration, and access control list modification
+    profile-param-value-origin: AC-6(1) implementation statement
   ac-06.01_odp.03:
-    profile-values:
-      - <REPLACE_ME>
-    profile-param-value-origin: <REPLACE_ME>
+    ssp-values:
+    - audit and log data review, access compliance review, and emergency account deactivation
+    profile-param-value-origin: AC-6(1) implementation statement
   ac-06.01_odp.04:
-    profile-values:
-      - <REPLACE_ME>
-    profile-param-value-origin: <REPLACE_ME>
+    ssp-values:
+    - the ISSO and system administrators
+    profile-param-value-origin: AC-6(1) implementation statement
   ac-06.01_odp.05:
     alt-identifier: ac-6.1_prm_3
-    profile-values:
-      - <REPLACE_ME>
-    profile-param-value-origin: <REPLACE_ME>
+    ssp-values:
+    - audit logs, access compliance data, and security service configuration
+    profile-param-value-origin: AC-6(1) implementation statement
 x-trestle-global:
   profile:
     title: IPS-SRS-001 Tailored Moderate Baseline (AC, AU, IR, CP)
@@ -91,8 +90,10 @@ ______________________________________________________________________
 
 ### This System
 
-<!-- Add implementation prose for the main This System component for control: ac-6.1 -->
+The ISSO and system administrators are two roles that are authorized to access security functions. Audit and log data and access compliance are reviewed by the ISSO. Emergency account deactivation is handled by the ISSO.
 
-#### Implementation Status: planned
+System administrators deploy patches, modify and implement firewall rules, modify and implement security group rules, configure parameters for security services, and modify access control lists.
 
-______________________________________________________________________
+Non-privileged users, parents, teachers, and school administrators, have no access to security relevant information, or functions available to the ISSO and system administrator.
+
+#### Implementation Status: implemented

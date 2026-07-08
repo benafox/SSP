@@ -24,9 +24,9 @@ x-trestle-set-params:
   #
   ac-06.02_odp:
     alt-identifier: ac-6.2_prm_1
-    profile-values:
-      - <REPLACE_ME>
-    profile-param-value-origin: <REPLACE_ME>
+    ssp-values:
+    - security functions and security-relevant information
+    profile-param-value-origin: AC-6(2) implementation statement
 x-trestle-global:
   profile:
     title: IPS-SRS-001 Tailored Moderate Baseline (AC, AU, IR, CP)
@@ -58,8 +58,6 @@ ______________________________________________________________________
 
 ### This System
 
-<!-- Add implementation prose for the main This System component for control: ac-6.2 -->
+ISSO and system administrators may only perform privileged security and administrative functions with their accounts. There is no non-security/operational work in the system for them to perform. By system design, privileged credentials cannot be used for non-privileged activity. If someone in this role has a student, they would obtain a separate non-privileged account through the standard registrar process, which would be able to access their student's records, without having access to the security functions.
 
-#### Implementation Status: planned
-
-______________________________________________________________________
+#### Implementation Status: implemented

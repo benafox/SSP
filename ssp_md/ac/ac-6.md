@@ -42,8 +42,8 @@ ______________________________________________________________________
 
 ### This System
 
-<!-- Add implementation prose for the main This System component for control: ac-6 -->
+Least privilege is employed through the system role-based access control component. This component checks for authorization to view record level information when a user requests the information. Parents can only access their associated student's records, teachers can only access their assigned rosters, and administrators can only access their school's students. No role is granted access beyond the defined task requirements.
 
-#### Implementation Status: planned
+System administrator privileges are assigned through AWS Systems Manager Session Manager. Their available functions are assigned via an allow-list.
 
-______________________________________________________________________
+#### Implementation Status: implemented

@@ -42,8 +42,6 @@ ______________________________________________________________________
 
 ### This System
 
-<!-- Add implementation prose for the main This System component for control: ac-6.10 -->
+Non-privileged users are prevented from executing privileged functions through the role based access control component of the system. Privileged functions are defined in AC-6(1), non-privileged roles do not have access to any privileged functions. System operations are default-deny. Administrative functions fall under the system administrator role, which is only accessible through AWS SSM Session Manager.
 
-#### Implementation Status: planned
-
-______________________________________________________________________
+#### Implementation Status: implemented

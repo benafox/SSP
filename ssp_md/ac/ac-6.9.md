@@ -42,8 +42,6 @@ ______________________________________________________________________
 
 ### This System
 
-<!-- Add implementation prose for the main This System component for control: ac-6.9 -->
+The execution of privileged functions is logged via Splunk. Privileged functions include patching, firewall/security-group rule changes, security-service config, and ACL modification as defined in AC-6(1).
 
-#### Implementation Status: planned
-
-______________________________________________________________________
+#### Implementation Status: implemented

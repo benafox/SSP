@@ -24,14 +24,14 @@ x-trestle-set-params:
   #
   ac-06.07_odp.01:
     alt-identifier: ac-6.7_prm_1
-    profile-values:
-      - <REPLACE_ME>
-    profile-param-value-origin: <REPLACE_ME>
+    ssp-values:
+    - annually
+    profile-param-value-origin: AC-6(7) implementation statement
   ac-06.07_odp.02:
     alt-identifier: ac-6.7_prm_2
-    profile-values:
-      - <REPLACE_ME>
-    profile-param-value-origin: <REPLACE_ME>
+    ssp-values:
+    - system administrators and ISSOs (all privileged roles)
+    profile-param-value-origin: AC-6(7) implementation statement
 x-trestle-global:
   profile:
     title: IPS-SRS-001 Tailored Moderate Baseline (AC, AU, IR, CP)
@@ -67,8 +67,6 @@ ______________________________________________________________________
 
 ### This System
 
-<!-- Add implementation prose for the main This System component for control: ac-6.7 -->
+User privileges are reviewed every year at a minimum. Reviews can be triggered by security incidents or major system changes. The CISO reviews and validates the ISSO and system administrator privileges to assess their alignment with their current duties. When privileges are discovered to be no longer necessary the CISO removes them, or reassigns them to maintain least privilege.
 
-#### Implementation Status: planned
-
-______________________________________________________________________
+#### Implementation Status: implemented
