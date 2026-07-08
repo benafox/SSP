@@ -24,34 +24,34 @@ x-trestle-set-params:
   #
   ac-07_odp.01:
     alt-identifier: ac-7_prm_1
-    profile-values:
-      - <REPLACE_ME>
-    profile-param-value-origin: <REPLACE_ME>
+    profile-param-value-origin: AC-7 implementation statement
+    ssp-values:
+    - '3'
   ac-07_odp.02:
     alt-identifier: ac-7_prm_2
-    profile-values:
-      - <REPLACE_ME>
-    profile-param-value-origin: <REPLACE_ME>
+    profile-param-value-origin: AC-7 implementation statement
+    ssp-values:
+    - 15 minutes
   ac-07_odp.03:
     alt-identifier: ac-7_prm_3
-    profile-values:
-      - <REPLACE_ME>
-    profile-param-value-origin: <REPLACE_ME>
+    profile-param-value-origin: AC-7 implementation statement
+    ssp-values:
+    - lock the account or node for [time period]
   ac-07_odp.04:
     alt-identifier: ac-7_prm_4
-    profile-values:
-      - <REPLACE_ME>
-    profile-param-value-origin: <REPLACE_ME>
+    profile-param-value-origin: AC-7 implementation statement
+    ssp-values:
+    - 30 minutes 
   ac-07_odp.05:
     alt-identifier: ac-7_prm_5
-    profile-values:
-      - <REPLACE_ME>
-    profile-param-value-origin: <REPLACE_ME>
+    profile-param-value-origin: AC-7 implementation statement
+    ssp-values:
+    - not applicable to the selected action
   ac-07_odp.06:
     alt-identifier: ac-7_prm_6
-    profile-values:
-      - <REPLACE_ME>
-    profile-param-value-origin: <REPLACE_ME>
+    profile-param-value-origin: AC-7 implementation statement
+    ssp-values:
+    - not applicable to the selected action
 x-trestle-global:
   profile:
     title: IPS-SRS-001 Tailored Moderate Baseline (AC, AU, IR, CP)
@@ -87,8 +87,10 @@ ______________________________________________________________________
 
 ### This System
 
-<!-- Add implementation prose for the main This System component for control: ac-7 -->
+For parent accounts, upon 3 consecutive unsuccessful login attempts within 15 minutes the user will be locked out for 30 minutes. The application's authentication service component is responsible for executing the lockouts.
 
-#### Implementation Status: planned
+Teacher and school administrator accounts that have 3 consecutive unsuccessful login attempts within 15 minutes are locked out for 15 minutes. The IdP inherited by the system enforces the staff lockouts.
 
-______________________________________________________________________
+ISSO and system administrator privileged authentication via AWS SSM is subject to the inherited IPS AWS IAM's failed-attempt controls.
+
+#### Implementation Status: implemented
