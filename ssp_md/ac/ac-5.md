@@ -24,9 +24,9 @@ x-trestle-set-params:
   #
   ac-05_odp:
     alt-identifier: ac-5_prm_1
-    profile-values:
-      - <REPLACE_ME>
-    profile-param-value-origin: <REPLACE_ME>
+    ssp-values:
+    - adding/removing privileged system administrator accounts, adding/removing/modifying end-user accounts, handling employee role changes, defining policy, enforcing policy, viewing student information, changing student information, and reviewing compliance
+    profile-param-value-origin: AC-5 implementation statement
 x-trestle-global:
   profile:
     title: IPS-SRS-001 Tailored Moderate Baseline (AC, AU, IR, CP)
@@ -50,7 +50,7 @@ x-trestle-global:
 
 ## Control guidance
 
-Separation of duties addresses the potential for abuse of authorized privileges and helps to reduce the risk of malevolent activity without collusion. Separation of duties includes dividing mission or business functions and support functions among different individuals or roles, conducting system support functions with different individuals, and ensuring that security personnel who administer access control functions do not also administer audit functions. Because separation of duty violations can span systems and application domains, organizations consider the entirety of systems and system components when developing policy on separation of duties. Separation of duties is enforced through the account management activities in [AC-2](#ac-2) , access control mechanisms in [AC-3](#ac-3) , and identity management activities in [IA-2](#ia-2), [IA-4](#ia-4) , and [IA-12](#ia-12).
+Separation of duties addresses the potential for abuse of authorized privileges and helps to reduce the risk of malevolent activity without collusion. Separation of duties includes dividing mission or business functions and support functions among different individuals or roles, conducting system support functions with different individuals, and ensuring that security personnel who administer access control functions do not also administer audit functions. Because separation of duty violations can span systems and application domains, organizations consider the entirety of systems and system components when developing policy on separation of duties. Separation of duties is enforced through the account management activities in AC-2 , access control mechanisms in AC-3, and identity management activities in IA-2, IA-4, and IA-12.
 
 ______________________________________________________________________
 
@@ -62,8 +62,6 @@ ______________________________________________________________________
 
 ### This System
 
-<!-- Add implementation prose for the main This System component for control: ac-5 -->
+Duties that require separation are adding/removing privileged system administrator accounts, adding/removing/modifying end user accounts, handling employee role changes, defining policy, enforcing policy, viewing student information, changing student information, and reviewing compliance. Separation of duties chart (11) shows what roles handle which responsibilities.
 
-#### Implementation Status: planned
-
-______________________________________________________________________
+#### Implementation Status: implemented
